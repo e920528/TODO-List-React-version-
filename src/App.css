@@ -1,0 +1,260 @@
+/* Include the padding and border in an element's total width and height */
+* {
+box-sizing: border-box;
+}
+
+h2 {
+  padding: 10px;
+}
+
+/* Remove margins and padding from the list */
+ul {
+margin: 0;
+padding: 0px 40px;
+}
+
+/* Style the list items */
+ul li {
+cursor: pointer;
+position: relative;
+padding: 12px 8px 12px 40px;
+list-style-type: none;
+background: #eee;
+font-size: 18px;
+transition: 0.2s;
+
+/* make the list items unselectable */
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+background: #cfcdcd;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+background: #80b9f1;
+}
+
+/* When clicked on, add a background color and strike out text */
+.checked {
+background: rgb(137, 177, 127);
+color: black;
+text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+content: '';
+position: absolute;
+border-color: #0070e0;
+border-style: solid;
+border-width: 0 2px 2px 0;
+top: 10px;
+left: 16px;
+transform: rotate(45deg);
+height: 15px;
+width: 7px;
+}
+
+/* Style the close/edit/showitem/check button */
+.close{
+padding: 4px;
+}
+
+.edit{
+padding: 4px;
+}
+
+.enter{
+  padding: 4px;
+  margin-left: 10px;
+}
+
+.show {
+position: relative;
+right: 0;
+top: 0;
+padding-bottom: 6px;
+padding-top: 6px;
+}
+.check {
+position: absolute;
+right: 88px;
+top: 0;
+padding: 11px 15px 11px 15px;
+}
+.check:hover {
+background-color: green;
+color: black;
+}
+.close:hover {
+background-color: #f44336;
+color: black;
+}
+
+.edit:hover {
+background-color: #0070e0;
+color: black;
+}
+
+/* Style the header */
+.header {
+background-color: white;
+padding: 30px 40px;
+color: black;
+text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Style the input */
+input {
+border: 1px solid #c1c7cd;;
+width: 75%;
+padding: 10px;
+float: left;
+font-size: 16px;
+
+}
+
+/* Style the "Add" button */
+.addBtn {
+width: 25%;
+background: #0070e0;
+color: white;
+float: left;
+text-align: center;
+font-size: 16px;
+cursor: pointer;
+transition: 0.3s;
+padding: 11px;
+border: 0;
+}
+
+.addBtn:hover {
+background-color: #bbb;
+}
+
+/*Style a tag*/
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+a{
+color:black;
+}
+
+/*style class num*/
+.num {
+color: black;
+text-align: right;
+}
+/*home button*/
+.home {
+position: absolute;
+right: 40px;
+top: 50px;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 240px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #F7F9FA; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+.sidenav p {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #0070e0;
+}
+
+/* Style page content */
+.main {
+  margin-left: 240px; /* Same as the width of the sidebar */
+}
+
+/* Style finishNum */
+.finish {
+  margin-left: 20px;
+  color: green;
+  font-size: 10px;
+  position: relative;
+}
+
+/* Style unfinishNum */
+.unfinish {
+  margin-left: 20px;
+  color: red;
+  font-size: 10px;
+
+}
+
+/* Style List Title */
+.item-header {
+  padding: 0px 40px;
+  color: black;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.close-item{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 14px 15px;
+}
+
+.edit-item{
+  position: absolute;
+  right: 42px;
+  top: 0;
+  padding: 14px 15px;
+}
+.check-item {
+  position: absolute;
+  right: 88px;
+  top: 0;
+  padding: 14px 15px;
+}
